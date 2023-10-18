@@ -24,6 +24,7 @@ export const App = (): ReactElement => {
             <Route path="book-ticket" element={<BookTicket />} />
             <Route path="get-ticket" element={<GetTicket />} />
             <Route index element={<Navigate to="/book-ticket" />} />
+            <Route path="" element={<Navigate to="/book-ticket" />} />
           </Route>
         </Routes>
       </BrowserRouter>
